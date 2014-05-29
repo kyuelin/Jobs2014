@@ -51,17 +51,24 @@ public class KnewtonChallenge {
 		
 		KnewtonChallenge kc = new KnewtonChallenge();
 		
+//		List<Thread> threadlist = new LinkedList<Thread>();
+		
 		for (int i=0; i<lines.size(); ++i) {
 //			executor.execute(kc.new MyRunnable(lines.get(i), map, i));
-			Thread t = new Thread(kc.new MyRunnable(lines.get(i), map, i));
-			t.start();
+//			Thread t = new Thread(kc.new MyRunnable(lines.get(i), map, i));
+//			t.start();
+//			threadlist.add(t);
+			kc.new MyRunnable(lines.get(i), map, i).run();
+		}
+		
+/*		for(final Thread t : threadlist) {
 			try {
 				t.join();
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-			}
-		}
+			}			
+		}*/
 		
 		Iterator<Entry<String, List<Integer>>> iterator = map.entrySet().iterator();
 		while(iterator.hasNext()) {
