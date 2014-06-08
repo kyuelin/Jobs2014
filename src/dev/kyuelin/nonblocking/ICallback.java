@@ -1,4 +1,4 @@
-package nonblocking.kyuelin.com;
+package dev.kyuelin.nonblocking;
 
 public interface ICallback {
 	void callback();

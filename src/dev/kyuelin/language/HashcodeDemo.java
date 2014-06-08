@@ -1,4 +1,4 @@
-package language.kyuelin.com;
+package dev.kyuelin.language;
 
 import java.util.HashSet;
 import java.util.Set;

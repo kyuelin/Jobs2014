@@ -1,4 +1,4 @@
-package nonblocking.kyuelin.com;
+package dev.kyuelin.nonblocking;
 
 import java.util.LinkedList;
 import java.util.Observable;

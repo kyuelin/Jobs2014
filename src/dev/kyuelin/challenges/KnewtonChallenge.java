@@ -1,4 +1,4 @@
-package challenges.kyuelin.com;
+package dev.kyuelin.challenges;
 
 import java.io.BufferedReader;
 import java.io.IOException;

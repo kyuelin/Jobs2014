@@ -1,4 +1,4 @@
-package nonblocking.kyuelin.com;
+package dev.kyuelin.nonblocking;
 
 import java.util.ArrayList;
 import java.util.List;

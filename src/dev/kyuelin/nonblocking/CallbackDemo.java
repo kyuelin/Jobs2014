@@ -1,4 +1,4 @@
-package nonblocking.kyuelin.com;
+package dev.kyuelin.nonblocking;
 
 public class CallbackDemo implements ICallback {
 

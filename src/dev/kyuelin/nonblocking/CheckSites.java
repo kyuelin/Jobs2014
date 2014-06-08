@@ -1,4 +1,4 @@
-package nonblocking.kyuelin.com;
+package dev.kyuelin.nonblocking;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
