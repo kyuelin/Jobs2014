@@ -1,4 +1,4 @@
-package com.ms.linken.logging;
+package dev.kyuelin.logging;
 
 import java.util.concurrent.Callable;
 

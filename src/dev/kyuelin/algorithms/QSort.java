@@ -1,4 +1,4 @@
-package algorithm;
+package dev.kyuelin.algorithms;
 
 import java.util.LinkedList;
 

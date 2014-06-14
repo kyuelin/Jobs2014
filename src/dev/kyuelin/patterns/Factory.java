@@ -1,4 +1,4 @@
-package patterns;
+package dev.kyuelin.patterns;
 
 public class Factory {
 	public IProduct createProduct(int prodType) {

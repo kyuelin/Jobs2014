@@ -1,4 +1,4 @@
-package concurrency;
+package dev.kyuelin.concurrency;
 
 import java.util.LinkedList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package serialization;
+package dev.kyuelin.serialization;
 
 public class SimpleOrder extends Order {
 

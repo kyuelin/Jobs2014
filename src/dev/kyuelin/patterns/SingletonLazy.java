@@ -1,4 +1,4 @@
-package patterns;
+package dev.kyuelin.patterns;
 
 public class SingletonLazy {
 	private static volatile SingletonLazy single = null;

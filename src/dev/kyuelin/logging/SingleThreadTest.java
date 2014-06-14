@@ -1,4 +1,4 @@
-package com.ms.linken.logging;
+package dev.kyuelin.logging;
 
 public class SingleThreadTest implements TestInterface {
 

@@ -1,4 +1,4 @@
-package utilities;
+package dev.kyuelin.utilities;
 
 public class SleepMessages {
     public static void main(String args[])

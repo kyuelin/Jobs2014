@@ -1,4 +1,4 @@
-package principles;
+package dev.kyuelin.principles;
 
 public class OPrinciple {
 	// no change required when a new shape is added.

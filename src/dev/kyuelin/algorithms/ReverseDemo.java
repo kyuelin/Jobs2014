@@ -1,16 +1,18 @@
-package algorithm;
+package dev.kyuelin.algorithms;
 
-import languages.MySuper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-public class RerverseDemo {
+public class ReverseDemo {
 
+	private static Logger logger = LoggerFactory.getLogger(ReverseDemo.class);
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		MySuper.myPrint(reverseString("kd8324ldclcbk1231"));
+		logger.info(reverseString("kd8324ldclcbk1231"));
 	}
 
 	public static String reverseString(final String input) {
@@ -19,7 +21,7 @@ public class RerverseDemo {
 		for(int i=input.length()-1; i>=0; --i) {
 			temp=input.substring(i,i+1);
 			output.append(temp);
-			MySuper.myPrint(output.toString());
+			logger.info(output.toString());
 		}
 		return output.toString();
 	}

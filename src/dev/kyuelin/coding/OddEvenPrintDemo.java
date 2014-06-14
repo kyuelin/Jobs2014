@@ -1,4 +1,4 @@
-package coding;
+package dev.kyuelin.coding;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

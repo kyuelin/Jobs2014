@@ -1,4 +1,4 @@
-package patterns;
+package dev.kyuelin.patterns;
 
 public class AbstractFactory {
 	public IFactory makeFactory(int type) {

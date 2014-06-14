@@ -1,10 +1,13 @@
-package algorithm;
+package dev.kyuelin.algorithms;
 
 import java.util.Arrays;
 
-import languages.MySuper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class SortDemo {
+	
+	private static Logger logger = LoggerFactory.getLogger(SortDemo.class);
 
 	public static void bubbleSort() {
 		int[] iarray={30, 12, 18, 0, -5, 72, 424};
@@ -18,7 +21,7 @@ public class SortDemo {
 			}
 		}
 		
-		MySuper.myPrint(Arrays.toString(iarray));
+		logger.info(Arrays.toString(iarray));
 	}
 	/**
 	 * @param args

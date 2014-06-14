@@ -1,4 +1,4 @@
-package concurrency;
+package dev.kyuelin.concurrency;
 
 public class SleepDemo {
 	private static boolean fileProcessed = false;

@@ -1,4 +1,4 @@
-package com.ms.linken.logging;
+package dev.kyuelin.logging;
 
 import java.util.Collection;
 import java.util.List;

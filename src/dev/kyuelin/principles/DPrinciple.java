@@ -1,4 +1,4 @@
-package principles;
+package dev.kyuelin.principles;
 
 // Dependency Inversion Principle - Good example
 public class DPrinciple {

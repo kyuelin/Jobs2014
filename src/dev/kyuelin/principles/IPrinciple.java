@@ -1,4 +1,4 @@
-package principles;
+package dev.kyuelin.principles;
 
 // interface segregation principle - good example
 public interface IPrinciple {

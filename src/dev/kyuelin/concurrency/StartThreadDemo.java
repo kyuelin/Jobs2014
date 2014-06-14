@@ -1,4 +1,4 @@
-package concurrency;
+package dev.kyuelin.concurrency;
 
 public class StartThreadDemo {
 	

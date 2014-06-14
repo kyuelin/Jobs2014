@@ -1,15 +1,17 @@
-package utilities;
+package dev.kyuelin.utilities;
 
-import languages.MySuper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class RecursiveDemo {
 
+	private static Logger logger = LoggerFactory.getLogger(RecursiveDemo.class);
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
 
-		MySuper.myPrint(Integer.toString(numBitSet(23)));
+		logger.info(Integer.toString(numBitSet(23)));
 		
 		Object o = new Object();
 		try {

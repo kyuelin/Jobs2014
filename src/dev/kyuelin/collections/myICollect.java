@@ -1,4 +1,4 @@
-package collections;
+package dev.kyuelin.collections;
 
 import java.util.Collection;
 

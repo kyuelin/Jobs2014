@@ -1,4 +1,4 @@
-package concurrency;
+package dev.kyuelin.concurrency;
 
 import java.io.IOException;
 import java.net.MalformedURLException;

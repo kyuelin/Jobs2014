@@ -1,4 +1,4 @@
-package com.ms.linken.logging;
+package dev.kyuelin.logging;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
