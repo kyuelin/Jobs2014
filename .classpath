@@ -3,5 +3,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="lib/slf4j-1.7.7/slf4j-api-1.7.7.jar"/>
+	<classpathentry kind="lib" path="D:/linken/DevEnv/extlib/spymemcached-2.10.3.jar" sourcepath="D:/linken/DevEnv/extlib/spymemcached-2.10.3-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
