@@ -13,6 +13,7 @@ Go to the project home (http://github.com/kyuelin/Jobs2014) and click on the for
 C. Clone the fork locally
 
 % git clone git@github.com:<username>/Jobs2014.git
+
 D. Add your contributions
 
 It is a git best practice to develop each new feature or bug fix in a new branch, and we strongly recommend you do the same with descriptive branch names. It's trivial to create branches and switch between them. Using them will make it simple for you to pause one task list item and begin another. It also simplifies our process of tracking contributions to the main code base. Submitting pull requests for the same branch over and again can sometimes lead to unexpected results, so the basic process should be:
@@ -21,6 +22,7 @@ It is a git best practice to develop each new feature or bug fix in a new branch
 
 % cd Jobs2014
 % git checkout -b my_descriptive_branch_name
+
 You'll immediately be in the new branch. Remember this isn't Subversion or CVS, so the branch checkout doesn't create a new directory, it changes the state of your working directory, adding/removing files as necessary to update the state.
 
 2. Implement your changes
@@ -34,11 +36,13 @@ Now, write some code!
 Git requires files be staged before committing. You can add the files manually:
 
 % git add <file>
+
 Or add the -a tag when you commit.
 
 When you commit, just do the following:
 
 % git commit
+
 This will commit your changes to your local copy of the repository (which is distinct from your fork on github).
 
 4. (Optional) Merge down the primary code base
@@ -48,13 +52,17 @@ If you know changes have been made to the primary code base, or if a pull reques
 First create a "remote" to the primary (aka upstream) code repository. You only need to do this once ever. You're basically defining an alias that can be reused across checkouts:
 
 % git remote add upstream git://github.com/kyuelin/Jobs2014.git
+
 Retrieve and merge updates:
 
 % git fetch upstream
+
 % git merge upstream/master
+
 5. Push your changes
 
 % git push origin my_descriptive_branch_name
+
 If you cloned from another source than your fork, you can create a remote to your fork, and push to that fork instead of origin.
 
 6. Submit a pull request
