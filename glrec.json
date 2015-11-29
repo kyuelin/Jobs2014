@@ -1,0 +1,10 @@
+{
+  "latitude": 0.0,
+  "longitude": 0.0,
+  "member": "mem1",
+  "messages": [
+    "msg 1",
+    "msg 2",
+    "msg 3"
+  ]
+}
