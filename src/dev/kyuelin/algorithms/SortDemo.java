@@ -75,7 +75,7 @@ public class SortDemo {
         int pindex = low;
         Comparable pivot = input[high];
 
-        for (int i =0; i<high; i++) {
+        for (int i =low+1;i<high; i++) {
             if (input[i].compareTo(pivot) < 0) {
                 swap(input, i, pindex);
                 pindex++;
