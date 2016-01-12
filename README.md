@@ -78,6 +78,7 @@ E. Rinse and repeat
 More Reading
 
 A helpful guide to previewing submitted pull requests is here: http://beust.com/weblog/2010/09/15/a-quick-guide-to-pull-requests/
+http://rogerdudler.github.io/git-guide/
 
 For more reading, check out the excellent Pro Git book online, especially the Public Small Project section in chapter 5.2: http://progit.org/book/ch5-2.html. Also check out github's "Fork a Repo" help page: http://help.github.com/fork-a-repo/
 
