@@ -1,9 +1,9 @@
 package dev.kyuelin.caching;
 
-import net.spy.memcached.MemcachedClient;
+//import net.spy.memcached.MemcachedClient;
 
-public class ReaderImpl implements ICacheReader {
-	
+public class ReaderImpl {//implements ICacheReader {
+	/*
 	private MemcachedClient cacheClient;
 
 	@Override
@@ -12,5 +12,6 @@ public class ReaderImpl implements ICacheReader {
 		T t = (T) cacheClient.get(key);
 		return t;
 	}
+	*/
 
 }

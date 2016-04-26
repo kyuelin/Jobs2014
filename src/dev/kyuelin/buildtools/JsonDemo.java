@@ -1,14 +1,10 @@
 package dev.kyuelin.buildtools;
 
-import org.codehaus.jackson.map.ObjectMapper;
-
-import java.io.File;
-import java.io.IOException;
-
 /**
  * Created by linken on 5/4/15.
  */
 public class JsonDemo {
+    /*
     public static void main(String[] args) {
         GeoLocRecord rec = new GeoLocRecord();
         ObjectMapper mapper = new ObjectMapper();
@@ -20,4 +16,5 @@ public class JsonDemo {
             e.printStackTrace();
         }
     }
+    */
 }
