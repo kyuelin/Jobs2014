@@ -15,4 +15,12 @@ public class IntGenerator {
         }
         return output;
     }
+    public static int[] genFixedSizeIntArray(int size, int value_range) {
+        Random randgen = new Random(System.nanoTime());
+        int[] output = new int[size];
+        for(int i=0; i<size;i++) {
+            output[i] = randgen.nextInt(value_range)+1;
+        }
+        return output;
+    }
 }
