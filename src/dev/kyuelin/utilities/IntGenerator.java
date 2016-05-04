@@ -41,7 +41,30 @@ public class IntGenerator {
         }
         return intArray;
     }
+    public static int[][] genIntMatrix(int row_range, int column_range, int value_range) {
+        Random random = new Random(System.nanoTime());
+        int row = random.nextInt(row_range)+1;
+        int col = random.nextInt(column_range)+1;
+        int [][] intMat = new int[row][col];
+        for (int i=0; i<row; i++) {
+            for (int j=0; j<col; j++) {
+                intMat[i][j] = random.nextInt(value_range);
+            }
+        }
+        return intMat;
+    }
+
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(genUniqIntArray(23,100)));
+        //System.out.println(Arrays.toString(genUniqIntArray(23,100)));
+        int[][] mat = genIntMatrix(9,13,2);
+        for (int i=0; i<mat.length; i++) {
+            System.out.println(Arrays.toString(mat[i]));
+        }
+    }
+
+    public static void printMatrix(int[][] input) {
+        for(int i=0; i<input.length; i++) {
+            System.out.println(Arrays.toString(input[i]));
+        }
     }
 }
