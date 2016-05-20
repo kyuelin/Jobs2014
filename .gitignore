@@ -217,3 +217,11 @@ pip-log.txt
 
 lib/
 bundles/
+
+
+#############
+## JetBrain
+#############
+
+.idea/
+.idea/workspace.xml
