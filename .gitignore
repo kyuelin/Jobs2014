@@ -223,4 +223,5 @@ bundles/
 ## JetBrain
 #############
 
+.idea/
 .idea/workspace.xml
