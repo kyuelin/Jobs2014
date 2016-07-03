@@ -1,6 +1,5 @@
-package dev.kyuelin.CrackingCoding;
+package dev.kyuelin.crackingcoding;
 
-import javax.xml.bind.SchemaOutputResolver;
 import java.math.BigDecimal;
 
 /**

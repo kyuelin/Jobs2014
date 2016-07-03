@@ -1,7 +1,5 @@
 package dev.kyuelin.progcreek;
 
-import dev.kyuelin.CrackingCoding.IntervalDemo;
-
 /**
  * Created by kennethlin on 4/26/16.
  */
