@@ -1,7 +1,4 @@
-package dev.kyuelin.CrackingCoding;
-
-import javax.xml.bind.SchemaOutputResolver;
-import java.util.Arrays;
+package dev.kyuelin.crackingcoding;
 
 /**
  * Created by linken on 12/19/15.

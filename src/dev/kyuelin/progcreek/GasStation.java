@@ -1,8 +1,5 @@
 package dev.kyuelin.progcreek;
 
-import dev.kyuelin.CrackingCoding.IntervalDemo;
-import dev.kyuelin.utilities.IntGenerator;
-
 import java.util.Arrays;
 
 /**

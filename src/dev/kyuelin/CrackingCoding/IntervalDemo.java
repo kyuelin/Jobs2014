@@ -1,4 +1,4 @@
-package dev.kyuelin.CrackingCoding;
+package dev.kyuelin.crackingcoding;
 
 import java.util.ArrayList;
 import java.util.List;
