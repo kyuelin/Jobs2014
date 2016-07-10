@@ -15,7 +15,7 @@ public class Chase2 {
         while ((s = in.readLine()) != null) {
             //System.out.println(s);
             isOverlap1(s);
-            //isOverlap2(s);
+            isOverlap2(s);
         }
     }
 
@@ -32,36 +32,35 @@ true
 false
 1 1 1 1 -1 -1 2 1
 false
-0 0 1 1 -1 -1 1 1
+1 1 1 1 -1 -1 2 1
 true
      */
 
-    // bad solution
     public static void isOverlap2(String input) {
         String sa[] = input.split(" ");
-        int x1 = Integer.valueOf(sa[0]);
-        int y1 = Integer.valueOf(sa[1]);
+        int xbl1 = Integer.valueOf(sa[0]);
+        int ybl1 = Integer.valueOf(sa[1]);
         int w1 = Integer.valueOf(sa[2]);
         int h1 = Integer.valueOf(sa[3]);
-        int x2 = Integer.valueOf(sa[4]);
-        int y2 = Integer.valueOf(sa[5]);
+        int xbl2 = Integer.valueOf(sa[4]);
+        int ybl2 = Integer.valueOf(sa[5]);
         int w2 = Integer.valueOf(sa[6]);
         int h2 = Integer.valueOf(sa[7]);
 
-        int x1c = x1+w1/2;
-        int y1c = y1+h1/2;
-        int x2c = x2+w2/2;
-        int y2c = x2+h2/2;
+        int xtr1 = xbl1 + w1;
+        int ytr1 = ybl1 + h1;
+        int xtr2 = xbl2 + w2;
+        int ytr2 = ybl2 + h2;
 
-        double distance = Math.sqrt(Math.pow(x1c-x2c,2) + Math.pow(y1c-y2c, 2));
-        double max_dis = (Math.sqrt(Math.pow(w1,2) +  Math.pow(h1,w1)) + Math.sqrt(Math.pow(w2,2)+ Math.pow(h2,w2)))/2;
-        if (distance <= max_dis) {
-            System.out.println("true");
-        }
-        else {
+        if (xbl1 > xtr2 || xtr1 < xbl2) {
             System.out.println("false");
         }
-
+        else if (ybl1 > ytr2 || ytr1 < ybl2) {
+            System.out.println("false");
+        }
+        else {
+            System.out.println("true");
+        }
     }
 
     public static void isOverlap1(String input) {
