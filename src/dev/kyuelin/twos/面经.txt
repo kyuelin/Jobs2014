@@ -1,0 +1,54 @@
+2016-01-11
+
+1.
+a. reverse polish notation, 然后引申到怎么做比较generic, 用户要添加任意的计算字符
+提示： design pattern
+
+b. 给你一段写好的代码，就说一个树的结构，每一个node都指向了它的parent,给你一个index，要你删除所有它的子树
+
+
+2.
+a. 两个 independent queue,每个 queue 都存着 timestamp,只能有 getNext()来取 queue 里面的 timestamp,
+每个 timestamp 只能被取一次,比较这两个 queue 里的 timestamp,如果差值<1,print 这两个 timestamp。
+例如: Q1 0.2, 1.4, 3.0 Q2 1.0 1.1, 3.5 output: (0.2, 1.0), (1.4, 1.0), (0.2, 1.1), (1.4, 1.1), (3.0, 3.5) 
+提示： 多线程， 一个线程负责queue1, 一个负责queue2 写伪代码就行 
+
+b. 一个网站用户访问特别慢，怎么解决，分析各种可能原因 
+
+
+3. wildcard matching 先写junit test case, 再写代码 
+
+
+三轮都是中国人，LZ水平太烂木有珍惜。感觉two sigma非常高大上， 选人标准也很strict，pkg很好~也不是很累。
+题目基本都是面经题，会解没用，还会问的很深入。上午过了下午见了VP过得可能性比较大。 
+然后面试条件很好，送很多东西，给订了三晚上酒店，每天吃的报100刀，LZ旅游的很爽~大家可以去试试。
+
+===========================================================================================================================
+
+2015-06-22
+
+一轮：
+1. 判断一个long n 是不是power of 4…
+n (n-1)这个是用来判断n二进制以后 如果含有两个1 或以上，就返回false…和 n (ox5555555555555555)..这个如果不等于0就证明不是4的倍数…..
+
+2. iterator.. 那个题..他給你一个可以产生随机数的iterator，然后你自己写一个iterator…调用他的iterator….然后你的iterator..
+要把非5的倍数的数过滤掉。 完成你自己的hasnext（）、next（） 和remove（）。hasnext（）里也得调用他給的iterator.. 
+必须找着下一个5的倍数了才能返回true…所以next和hasnext里面都掉用了他給的iterator的next（）了…
+所以这里得用个boolean 之类的..记住hasnext里面已经找过了.下次再调用hasnext（）的时候不要又调用他的iterator的next（）了。
+
+二轮：
+1.game of life… 蛋疼..直接就来多维的….什么是多维的..例如…一个3*3 数组 a … a[0][0]的上邻居就是a[2][0], 斜左上邻居是a[2][2].
+然后要我写了整个程序..蛋疼… 问了我假如要处理好大的数据..但是一个机器内存刚好够…怎么优化..然后我毫不犹豫就说用多线程了..
+说了说要创建好多个tread…然后分别处理这个数组…然后他就问我好蛋疼的问题..你要创建多少个tread…怎么定多少个tread好…郁闷。
+
+2. text editor..设计题..要实现..insert(position), delete(p1, p2), highlight(p1, p2)， redo ，undo….等..问你用什么数据机构之类的。
+我一开始说要用char[][]。 但是給批评了好久…最后用了arraylist> 貌似…勉强通过了….然后…用什么储存..hightlight的…我一开始用hashset了..
+但是有个问题就是.delete的东西里面.刚好是hightlight的..那你怎么知道..你delete 的东西..也在hashset里面…所以.
+后来我用interval tree了…..他说…有道理多了….然后最后问了redo 和undo 怎么做…我用两个stack 储存operation…..
+
+这题..真心不太懂..求各路大神指导..
+
+三轮…
+debug….unit test….就google guava那个abstractmultimap..什么的…那个map 一个key(Type2) 对应一个collection. 我效率低下…然后之前还手贱的….
+复制了些东西去别的class了…导致一直错…蛋疼..弄了半天….才恢复正常…. 主要就改了put…然后test 的时候…注意一下要test bound case..null key 之类的.
+
