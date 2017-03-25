@@ -16,8 +16,8 @@ public class MyCollection {
 	 */
 	public static void main(String[] args) {
 	//	ArrayList<Integer> grades = new ArrayList<Integer>(123);
-		//testIterator();
-		testHashMap();
+		testIterator();
+		//testHashMap();
 		//testShift();
 		//testNLog();
 		//testSycMap();
@@ -40,9 +40,15 @@ public class MyCollection {
 		
 		Iterator<Integer> it = cars.iterator();
 		
+/*
 		while(it.hasNext()) {
 			System.out.println(it.next());
 		}
+*/
+
+		//cars.forEach((car) -> System.out.println(car));
+
+		cars.forEach(System.out::println);
 		
 		
 	}
