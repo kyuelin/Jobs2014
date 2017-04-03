@@ -1,7 +1,5 @@
 package dev.kyuelin.hackerrank;
 
-import java.util.*;
-
 /**
  * Created by linken on 6/18/16.
  */

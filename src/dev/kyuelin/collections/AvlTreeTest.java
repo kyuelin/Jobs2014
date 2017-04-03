@@ -1,7 +1,5 @@
 package dev.kyuelin.collections;
 
-import java.util.Comparator;
-
 /**
  * Created by linken on 11/29/15.
  */

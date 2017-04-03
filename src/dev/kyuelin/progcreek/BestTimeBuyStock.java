@@ -1,8 +1,5 @@
 package dev.kyuelin.progcreek;
 
-import dev.kyuelin.utilities.IntGenerator;
-
-import java.io.*;
 import java.util.Arrays;
 
 /**

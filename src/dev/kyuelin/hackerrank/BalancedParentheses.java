@@ -1,9 +1,5 @@
 package dev.kyuelin.hackerrank;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
-
-import java.util.*;
-
 /**
  * Created by linken on 6/18/16.
  */

@@ -1,7 +1,5 @@
 package dev.kyuelin.twos;
 
-import java.util.*;
-
 public class PolishDemo {
 	
 	private static class OperatorFactory {

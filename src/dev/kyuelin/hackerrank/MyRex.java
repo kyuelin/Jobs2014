@@ -1,7 +1,5 @@
 package dev.kyuelin.hackerrank;
 
-import java.util.regex.Pattern;
-
 /**
  * Created by linken on 11/5/15.
  */

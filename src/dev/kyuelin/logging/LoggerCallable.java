@@ -1,9 +1,9 @@
 package dev.kyuelin.logging;
 
-import java.util.concurrent.Callable;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.concurrent.Callable;
 
 public class LoggerCallable implements Callable<Object> {
 

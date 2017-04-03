@@ -3,7 +3,6 @@ package dev.kyuelin.hirevue;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.InterruptedIOException;
 
 /**
  * Created by linken on 7/3/16.

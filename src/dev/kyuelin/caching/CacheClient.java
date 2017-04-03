@@ -1,8 +1,5 @@
 package dev.kyuelin.caching;
 
-import java.io.IOException;
-import java.net.InetSocketAddress;
-
 //import net.spy.memcached.MemcachedClient;
 
 public class CacheClient {

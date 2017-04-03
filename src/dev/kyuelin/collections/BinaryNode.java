@@ -1,8 +1,5 @@
 package dev.kyuelin.collections;
 
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane;
-import java.util.Comparator;
-
 /**
  * Created by linken on 12/5/15.
  */

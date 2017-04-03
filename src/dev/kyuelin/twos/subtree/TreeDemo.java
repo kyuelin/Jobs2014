@@ -1,11 +1,6 @@
 package dev.kyuelin.twos.subtree;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.Map;
-import java.util.Queue;
-import java.util.Random;
+import java.util.*;
 
 public class TreeDemo {
 	public static void deleteSubTree(Node[] tree, int index) {

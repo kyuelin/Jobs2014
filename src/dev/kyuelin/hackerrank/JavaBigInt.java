@@ -1,11 +1,5 @@
 package dev.kyuelin.hackerrank;
 
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
-
 /**
  * Created by linken on 11/6/15.
  */

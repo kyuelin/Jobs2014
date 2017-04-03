@@ -1,11 +1,7 @@
 package dev.kyuelin.progcreek;
 
-import apple.laf.JRSUIUtils;
-import com.sun.xml.internal.xsom.impl.scd.Iterators;
-
 import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Stack;
 
 /**

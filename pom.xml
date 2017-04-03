@@ -5,7 +5,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>dev.kyuelin</groupId>
-    <artifactId>buildtools</artifactId>
+    <artifactId>Jobs2014</artifactId>
     <packaging>jar</packaging>
     <version>1.0</version>
 

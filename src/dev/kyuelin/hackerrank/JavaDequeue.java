@@ -1,7 +1,5 @@
 package dev.kyuelin.hackerrank;
 
-import java.util.*;
-
 /**
  * Created by kennethlin on 6/19/16.
  */

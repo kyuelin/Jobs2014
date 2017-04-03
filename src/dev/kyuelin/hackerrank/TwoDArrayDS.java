@@ -1,10 +1,5 @@
 package dev.kyuelin.hackerrank;
 
-import dev.kyuelin.utilities.IntGenerator;
-
-import java.util.Arrays;
-import java.util.Scanner;
-
 /**
  * Created by linken on 6/18/16.
  */

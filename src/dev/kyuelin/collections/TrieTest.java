@@ -1,7 +1,5 @@
 package dev.kyuelin.collections;
 
-import java.util.Scanner;
-
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
