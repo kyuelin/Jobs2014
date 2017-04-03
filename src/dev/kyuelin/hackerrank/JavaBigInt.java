@@ -1,5 +1,8 @@
 package dev.kyuelin.hackerrank;
 
+import java.math.BigInteger;
+import java.util.Scanner;
+
 /**
  * Created by linken on 11/6/15.
  */

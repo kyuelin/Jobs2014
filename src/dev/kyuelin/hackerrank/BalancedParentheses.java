@@ -1,5 +1,9 @@
 package dev.kyuelin.hackerrank;
 
+import java.util.HashMap;
+import java.util.Scanner;
+import java.util.Stack;
+
 /**
  * Created by linken on 6/18/16.
  */
