@@ -1,4 +1,4 @@
-package dev.kyuelin.utilities;
+package dev.kyuelin.utility;
 
 import java.util.Arrays;
 import java.util.HashSet;

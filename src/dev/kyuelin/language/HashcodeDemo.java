@@ -25,5 +25,4 @@ class HashcodeDemo {
 		logger.info("tests");
 
 	}
-	
 }

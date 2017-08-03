@@ -1,6 +1,6 @@
 package dev.kyuelin.progcreek;
 
-import dev.kyuelin.utilities.IntGenerator;
+import dev.kyuelin.utility.IntGenerator;
 
 import java.util.Arrays;
 import java.util.Random;
