@@ -1,13 +1,12 @@
 package dev.kyuelin.transactions;
 
-import org.beanio.BeanReader;
-import org.beanio.StreamFactory;
-import org.slf4j.Logger;
-
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+import org.beanio.BeanReader;
+import org.beanio.StreamFactory;
+import org.slf4j.Logger;
 
 public class TransFileReader {
 
@@ -18,13 +17,14 @@ public class TransFileReader {
 
     public static void main(String[] args) {
         TransFileReader reader = new TransFileReader();
-        reader.init("/Users/kennethlin/Google Drive/19204/archive/transactions_1712.csv");
+        //reader.init("/Users/kennethlin/Google Drive/19204/archive/transactions_1712.csv");
+        reader.init(args);
     }
 
-    private void init(final String transFile) {
+    private void init(final String[] args) {
         StreamFactory factory = StreamFactory.newInstance();
         factory.loadResource(transBIOConfig);
-        InputStream in = this.getClass().getResourceAsStream(transFile);
+        InputStream in = this.getClass().getResourceAsStream(args[1]);
         reader = factory.createReader("transactions", new InputStreamReader(in));
     }
 
