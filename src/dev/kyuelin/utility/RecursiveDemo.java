@@ -1,4 +1,4 @@
-package dev.kyuelin.utilities;
+package dev.kyuelin.utility;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,6 +1,8 @@
 package dev.kyuelin.algorithms;
 
-import dev.kyuelin.utilities.IntGenerator;
+import dev.kyuelin.utility.IntGenerator;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -9,20 +11,23 @@ import java.util.Random;
  * Created by linken on 5/5/16.
  */
 public class LottoGenerator {
-    public static int[] genWhiteBalls(int size, int num_range) {
-        int s = size+1; // to get the
-        int r = num_range+1;
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(LottoGenerator.class);
+
+    private static int[] genWhiteBalls(int size, int numrange) {
+        int s; // to get the
+        s = size + 1;
+        int r = numrange + 1;
         int[] wbs = IntGenerator.genUniqIntArray(s, r);
-        while (wbs.length != size) {
+        while (size != wbs.length) {
             wbs = IntGenerator.genUniqIntArray(s, r);
         }
         Arrays.sort(wbs);
         return wbs;
     }
 
-    public static int genPowerBall(int num_range) {
-        int pb = new Random(System.nanoTime()).nextInt(num_range+1);
-        return  pb;
+    public static int genPowerBall(int numrange) {
+        return new Random(System.nanoTime()).nextInt(numrange + 1);
     }
 
     public static void main(String[] args) {
@@ -30,8 +35,8 @@ public class LottoGenerator {
 
         for (int i=0; i<group; i++) {
             int[] wbs = genWhiteBalls(5,69);
-            Arrays.sort(wbs);
-            System.out.format("%s  %d\n", Arrays.toString(wbs),(new Random(System.nanoTime())).nextInt(27));
+
+            LOGGER.info("%s  %d", Arrays.toString(wbs), (new Random(System.nanoTime())).nextInt(27));
         }
     }
 }
