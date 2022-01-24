@@ -1,10 +1,12 @@
-package dev.kyuelin.concurrency;
+package dev.kyuelin.citi.mthread;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public class BlockingQDemo {
+
+    // https://docs.oracle.com/javase/specs/jls/se8/html/jls-17.html
 
     public static void main(String[] args) throws InterruptedException {
         int capacity = 16;
