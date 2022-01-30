@@ -1,4 +1,4 @@
-package main.dev.kyuelin;
+package dev.kyuelin.leetcode;
 
 public class PalindromeInt {
 

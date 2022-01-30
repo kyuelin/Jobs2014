@@ -1,6 +1,6 @@
 package dev.kyuelin.leetcode;
 
-public class AddInteger {
+public class AddString {
     public static String stringReverse(final String input) {
         StringBuilder stringBuilder = new StringBuilder();
         for(int i=input.length()-1; i >= 0; i--) {
@@ -75,10 +75,21 @@ public class AddInteger {
                 ten = true;
                 temp -= 10;
             }
+            else {
+                ten = false;
+            }
             stringBuilder.append(temp);
+            i2++;
+        }
+        if (true == ten) {
+            stringBuilder.append(1);
         }
 
         String result = stringReverse(stringBuilder.toString());
         return result;
+    }
+
+    public static void main (String[] args) {
+        System.out.println(AddString.addStrings("456", "77"));
     }
 }

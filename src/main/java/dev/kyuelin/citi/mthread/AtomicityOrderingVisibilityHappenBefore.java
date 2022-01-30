@@ -1,2 +1,4 @@
-package dev.kyuelin.citi.mthread;public class AtomicityOrderingVisibilityHappenBefore {
+package dev.kyuelin.citi.mthread;
+
+public class AtomicityOrderingVisibilityHappenBefore {
 }
