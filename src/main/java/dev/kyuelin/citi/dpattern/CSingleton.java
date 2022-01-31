@@ -26,4 +26,20 @@ public class CSingleton {
     public static CSingleton instanceOf2() {
         return CSingletonNew.cSingleton;
     }
+
+    // Initialization-on-demand holder idiom
+    public static CSingleton getInstance() {
+        return PrivateSingltonHolder.cSingleton;
+    }
+
+    private static class PrivateSingltonHolder {
+        public static final CSingleton cSingleton = new CSingleton();
+    }
+
+    // eager
+    private static final CSingleton cSingleton1 = new CSingleton();
+    
+    public static CSingleton getcSingleton() {
+        return cSingleton1;
+    }
 }

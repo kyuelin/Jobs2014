@@ -7,7 +7,7 @@ public class CBlockingQueue {
     private int capacity = 16;
     private List boundedQueue = new ArrayList(capacity);
 
-    public synchronized Object dequeue() throws InterruptedException {
+    public synchronized Object take() throws InterruptedException {
         while (boundedQueue.size() == 0) {
             wait();
         }
@@ -18,7 +18,7 @@ public class CBlockingQueue {
         return boundedQueue.remove(0);
     }
 
-    public synchronized void enqueue(Object o) throws InterruptedException {
+    public synchronized void put(Object o) throws InterruptedException {
         while (boundedQueue.size() == capacity) {
             wait();
         }
