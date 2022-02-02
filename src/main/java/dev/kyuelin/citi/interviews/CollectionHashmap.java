@@ -1,6 +1,8 @@
 package dev.kyuelin.citi.interviews;
 
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 import java.util.Set;
 
 public class CollectionHashmap {
@@ -14,19 +16,27 @@ public class CollectionHashmap {
 
         Set<Integer> kset = isMap.keySet();
 
-        for (Integer in : isMap.keySet()) {
-            System.out.println(in + ":" + isMap.get(in));
-        }
+        System.out.println(isMap);
 
+        System.out.println(kset);
+
+/*
         for (Integer in : kset) {
             if (in.intValue() % 2 == 1) {
-                isMap.remove(in);
+                String retstr = isMap.remove(in.intValue());
+                System.out.println(retstr);
+            }
+        }
+*/
+        Iterator iterator = kset.iterator();
+        while(iterator.hasNext()) {
+            Integer ik = (Integer) iterator.next();
+            if (ik%2==1) {
+                iterator.remove();
             }
         }
 
-        for (Integer in : isMap.keySet()) {
-            System.out.println(in + ":" + isMap.get(in));
-        }
+        System.out.println(isMap);
     }
 }
 
