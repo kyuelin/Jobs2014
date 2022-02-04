@@ -3,7 +3,7 @@ package dev.kyuelin.leetcode;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class ArrayReOrderredByDefinedArray {
+public class RelativeSortArray {
 
     // arr1 = [2,3,1,3,2,4,6,7,9,2,19], arr2 = [2,1,4,3,9,6]
 
@@ -48,7 +48,7 @@ public class ArrayReOrderredByDefinedArray {
         int[] arr1 = {2,3,1,3,2,4,6,7,9,2,19};
         int[] arr2 = {2,1,4,3,9,6};
 
-        int[] arr3 = ArrayReOrderredByDefinedArray.relativeSortArray(arr1, arr2);
+        int[] arr3 = RelativeSortArray.relativeSortArray(arr1, arr2);
 
         System.out.println(Arrays.toString(arr3));
     }
