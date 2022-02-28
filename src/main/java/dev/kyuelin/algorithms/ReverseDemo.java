@@ -5,7 +5,7 @@ import org.slf4j.LoggerFactory;
 
 public class ReverseDemo {
 
-	private static Logger logger = LoggerFactory.getLogger(ReverseDemo.class);
+	private static final Logger logger = LoggerFactory.getLogger(ReverseDemo.class);
 	/**
 	 * @param args
 	 */

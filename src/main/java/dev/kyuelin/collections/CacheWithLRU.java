@@ -9,11 +9,11 @@ import java.util.concurrent.ConcurrentHashMap;
  * Created by linken on 6/22/16.
  */
 public class CacheWithLRU<K, V> {
-    private Map cache;
-    private LinkedList orderedKeys;
+    private final Map cache;
+    private final LinkedList orderedKeys;
     private ConcurrentHashMap table;
 
-    private int capacity;
+    private final int capacity;
 
     public CacheWithLRU(int capacity) {
         this.capacity=capacity;

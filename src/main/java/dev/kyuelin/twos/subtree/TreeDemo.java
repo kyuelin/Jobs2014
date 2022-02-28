@@ -80,7 +80,7 @@ public class TreeDemo {
 	}
 	
 	
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		int size = 11;
 		Node[] tree = new Node[size];
 		/*

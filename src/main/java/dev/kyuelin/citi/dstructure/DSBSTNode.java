@@ -6,7 +6,7 @@ import java.util.List;
 
 public class DSBSTNode {
 
-    private Integer ikey;
+    private final Integer ikey;
     private DSBSTNode left, right;
 
     public DSBSTNode(Integer ikey) {

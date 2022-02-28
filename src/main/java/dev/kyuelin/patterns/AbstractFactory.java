@@ -12,10 +12,10 @@ public class AbstractFactory {
 		}
 	}
 	public interface IFactory {
-		public IProduct produce();
+		IProduct produce();
 	}	
 	public interface IProduct {
-		public void doSomething();
+		void doSomething();
 	}
 	public class FactoryOne implements IFactory {
 		public IProduct produce() {return new ProductOne();}		
@@ -24,10 +24,12 @@ public class AbstractFactory {
 		public IProduct produce() {return new ProductTwo();}		
 	}
 	public class ProductOne implements IProduct {
-		public void doSomething() {;}
+		public void doSomething() {
+        }
 	}
 	public class ProductTwo implements IProduct {
-		public void doSomething() {;}
+		public void doSomething() {
+        }
 	}
 	
 	public static void main(String[] args) {

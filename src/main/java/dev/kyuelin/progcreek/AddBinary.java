@@ -94,7 +94,7 @@ public class AddBinary {
                 eflag=0;
             }
 
-            sb.append(String.valueOf(sum));
+            sb.append(sum);
 
         }
         if (eflag==1) {

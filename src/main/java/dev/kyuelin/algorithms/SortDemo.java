@@ -7,7 +7,7 @@ import java.util.Arrays;
 
 public class SortDemo {
 	
-	private static Logger logger = LoggerFactory.getLogger(SortDemo.class);
+	private static final Logger logger = LoggerFactory.getLogger(SortDemo.class);
 
 	public static void bubbleSort() {
 		int[] iarray={30, 12, 18, 0, -5, 72, 424};

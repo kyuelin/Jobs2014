@@ -3,7 +3,7 @@ package dev.kyuelin.algorithms;
 
 public class QUAlgorithm implements IQAlgorithm {
 	
-	private int[] id;
+	private final int[] id;
 	
 	public QUAlgorithm(int N) {
 		// TODO Auto-generated constructor stub

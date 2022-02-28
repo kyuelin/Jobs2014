@@ -29,8 +29,8 @@ public class MTSyncCounter {
 
     class CounterRunnable implements Runnable {
 
-        private MTSyncCounter myCounter;
-        private int myTimes;
+        private final MTSyncCounter myCounter;
+        private final int myTimes;
 
         public CounterRunnable(MTSyncCounter mtSyncCounter, int times) {
             this.myCounter = mtSyncCounter;

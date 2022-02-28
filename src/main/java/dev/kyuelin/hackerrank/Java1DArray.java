@@ -54,7 +54,7 @@ public class Java1DArray {
             int i = 0;
             for (; i < parameters.length() && parameters.charAt(i) != ' '; i++) ;
             n = Integer.valueOf(parameters.substring(0, i));
-            m = Integer.valueOf(parameters.substring(i + 1, parameters.length()));
+            m = Integer.valueOf(parameters.substring(i + 1));
 
             int[] input = new int[n];
             int k = 0;
@@ -71,7 +71,7 @@ public class Java1DArray {
                     begin = j + 1;
                 }
             }
-            input[k] = Integer.valueOf(arr.substring(begin, arr.length()));
+            input[k] = Integer.valueOf(arr.substring(begin));
 
             //System.out.println(Arrays.toString(input));
             playGame(input, m);

@@ -2,7 +2,7 @@ package dev.kyuelin.concurrency;
 
 public class WaitDemo {
 	
-	private static Object monitor = new Object();
+	private static final Object monitor = new Object();
 	private static boolean isProcessed = false;
 	
 	public static void main (String [] args) {

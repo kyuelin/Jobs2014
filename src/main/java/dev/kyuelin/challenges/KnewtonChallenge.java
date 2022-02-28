@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -17,7 +18,7 @@ import java.util.concurrent.Executors;
 
 public class KnewtonChallenge {
 
-	private static Logger logger = LoggerFactory.getLogger(KnewtonChallenge.class);
+	private static final Logger logger = LoggerFactory.getLogger(KnewtonChallenge.class);
 
 	// 1. read files
 	// 2. foreach line create a runnable task to add compounded names into a map
@@ -31,7 +32,7 @@ public class KnewtonChallenge {
 		Path file = Paths
 				.get("/Users/kennethlin/git/Jobs2014/src/challenges/Artist_lists_small.txt");
 //				.get("D:\\linken\\Workspace\\Jobs2014\\src\\challenges\\Artist_lists_small.txt");
-		Charset charset = Charset.forName("UTF-8");
+		Charset charset = StandardCharsets.UTF_8;
 
 		long start = System.currentTimeMillis();
 
@@ -65,7 +66,7 @@ public class KnewtonChallenge {
 		}
 		logger.info("map size:" + map.entrySet().size());
 		logger.info("program completed in : "
-				+ Long.toString(System.currentTimeMillis() - start) + "ms.");
+				+ (System.currentTimeMillis() - start) + "ms.");
 	}
 
 	class MyRunnable implements Runnable {

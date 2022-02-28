@@ -17,10 +17,10 @@ public class AdapterDemo {
 	
 	
 	interface Adaptee1 {
-		public void method1();
+		void method1();
 	}	
 	interface Adaptee2 {
-		public void method2();
+		void method2();
 	}
 	class Adapter2 implements Adaptee1, Adaptee2 {
 		public void method() {

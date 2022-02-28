@@ -24,10 +24,11 @@ public class Demo2 {
 		oos2.close();
 		
 		class T implements Runnable {			
-			private DataInputStream dis;
-			private BlockingQueue<Double> q1, q2;
+			private final DataInputStream dis;
+			private final BlockingQueue<Double> q1;
+            private final BlockingQueue<Double> q2;
 			//private double unit_of_incrementaion = 0.1;
-			private double gap = 0.9;
+			private final double gap = 0.9;
 			
 			T(DataInputStream dis, BlockingQueue<Double> q1, BlockingQueue<Double> q2) {
 				this.dis = dis;
@@ -54,7 +55,7 @@ public class Demo2 {
 						break;
 					}
 					q1.add(d);
-					while(!q2.isEmpty() && (Math.abs(d-(double)q2.peek()) > gap )) {
+					while(!q2.isEmpty() && (Math.abs(d- q2.peek()) > gap )) {
 						q2.poll();
 					}
 					

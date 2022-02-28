@@ -15,7 +15,7 @@ public class DynamicArray {
         int N = scan.nextInt();
         int Q = scan.nextInt();
         scan.nextLine();
-        ArrayList<Integer> S[] = new ArrayList[N];
+        ArrayList<Integer>[] S = new ArrayList[N];
         for (int n=0; n<N; n++) {
             S[n]=new ArrayList<>();
         }

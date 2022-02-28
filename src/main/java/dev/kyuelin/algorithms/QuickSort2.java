@@ -48,7 +48,7 @@ class QuickSortTest
 
         int length = array.length;
 
-        qsort.quickSort(array, 0, length-1);
+        QuickSort2.quickSort(array, 0, length-1);
 
         System.out.print("Sorted  Array : ");
         for(int i=0; i<array.length;i++)

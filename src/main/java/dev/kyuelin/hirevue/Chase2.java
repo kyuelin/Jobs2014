@@ -36,7 +36,7 @@ true
      */
 
     public static void isOverlap2(String input) {
-        String sa[] = input.split(" ");
+        String[] sa = input.split(" ");
         int xbl1 = Integer.valueOf(sa[0]);
         int ybl1 = Integer.valueOf(sa[1]);
         int w1 = Integer.valueOf(sa[2]);
@@ -63,7 +63,7 @@ true
     }
 
     public static void isOverlap1(String input) {
-        String sa[] = input.split(" ");
+        String[] sa = input.split(" ");
         int w1 = Integer.valueOf(sa[2]);
         int h1 = Integer.valueOf(sa[3]);
         int w2 = Integer.valueOf(sa[6]);

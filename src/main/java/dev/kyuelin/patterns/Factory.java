@@ -12,7 +12,7 @@ public class Factory {
 		}
 	}	
 	public interface IProduct {
-		public void doSomething();
+		void doSomething();
 	}	
 	public class ProductOne implements IProduct {
 		public void doSomething() {}

@@ -5,7 +5,7 @@ import org.slf4j.LoggerFactory;
 
 public class LoggerRunnable implements Runnable {
 
-	private static Logger logger = LoggerFactory.getLogger(LoggerRunnable.class);
+	private static final Logger logger = LoggerFactory.getLogger(LoggerRunnable.class);
 
 	@Override
 	public void run() {

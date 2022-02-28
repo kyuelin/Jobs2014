@@ -1,9 +1,9 @@
 package dev.kyuelin.utility;
 
 public class SleepMessages {
-    public static void main(String args[])
+    public static void main(String[] args)
         throws InterruptedException {
-        String importantInfo[] = {
+        String[] importantInfo = {
             "Mares eat oats",
             "Does eat oats",
             "Little lambs eat ivy",

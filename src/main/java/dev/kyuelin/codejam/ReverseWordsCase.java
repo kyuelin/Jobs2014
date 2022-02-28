@@ -10,8 +10,8 @@ import java.util.StringTokenizer;
  */
 public class ReverseWordsCase {
 
-    private int case_num;
-    private List<String> words;
+    private final int case_num;
+    private final List<String> words;
 
     ReverseWordsCase(int num_, List<String> words_){
         this.case_num=num_;

@@ -5,7 +5,7 @@ import org.slf4j.LoggerFactory;
 
 public class RecursiveDemo {
 
-	private static Logger logger = LoggerFactory.getLogger(RecursiveDemo.class);
+	private static final Logger logger = LoggerFactory.getLogger(RecursiveDemo.class);
 	/**
 	 * @param args
 	 */

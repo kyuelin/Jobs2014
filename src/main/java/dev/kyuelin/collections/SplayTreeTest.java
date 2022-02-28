@@ -8,10 +8,10 @@ public class SplayTreeTest {
         root = nullNode;
     }
 
-    private BinaryNode root;
-    private static BinaryNode nullNode;
-    private static BinaryNode newNode = null;
-    private static BinaryNode header = new BinaryNode(null);
+    private final BinaryNode root;
+    private static final BinaryNode nullNode;
+    private static final BinaryNode newNode = null;
+    private static final BinaryNode header = new BinaryNode(null);
     static
     {
         nullNode=new BinaryNode(null);

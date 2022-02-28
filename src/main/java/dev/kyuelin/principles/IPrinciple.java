@@ -3,10 +3,10 @@ package dev.kyuelin.principles;
 // interface segregation principle - good example
 public interface IPrinciple {
 	interface IWorkable {
-		public void work();
+		void work();
 	}
 	interface IFeedable {
-		public void eat();
+		void eat();
 	}
 	class Worker implements IWorkable, IFeedable {
 		public void work() {}

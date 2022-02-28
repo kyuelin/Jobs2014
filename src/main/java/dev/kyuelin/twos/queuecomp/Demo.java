@@ -41,8 +41,8 @@ public class Demo {
 	
 	public static class MyCollection<Integer> implements Iterable<Integer> {
 		
-		private Integer[] arrInt;
-		private int size;
+		private final Integer[] arrInt;
+		private final int size;
 
 		public MyCollection(Integer[] irr) {
 			this.arrInt=irr;

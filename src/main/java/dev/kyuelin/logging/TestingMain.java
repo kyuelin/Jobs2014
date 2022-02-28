@@ -9,7 +9,7 @@ import java.util.concurrent.Callable;
 
 public class TestingMain {
 
-	private static Logger logger = LoggerFactory.getLogger(LoggerRunnable.class);
+	private static final Logger logger = LoggerFactory.getLogger(LoggerRunnable.class);
 
 	/**
 	 * @param args

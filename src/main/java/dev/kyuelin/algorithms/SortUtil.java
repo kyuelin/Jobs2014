@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class SortUtil {
 
-	private static int threshold = 5;
+	private static final int threshold = 5;
 
 	/**
 	 * This is the public driver method for mergesort which performs a mergesort
@@ -227,7 +227,7 @@ public class SortUtil {
 		T temp = array.get(right);
 		array.set(right, array.get(left));
 		array.set(left, temp);
-		System.out.println(array.toString() + " ");
+		System.out.println(array + " ");
 	}
 
 	/**

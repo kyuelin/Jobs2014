@@ -14,7 +14,7 @@ public class StringAnagrams {
         char[] bArr = B.toLowerCase().toCharArray();
         Arrays.sort(bArr);
         String bStr = String.valueOf(bArr);
-        return (aStr.compareTo(bStr) == 0) ? true : false;
+        return aStr.compareTo(bStr) == 0;
     }
 
     public static void main(String[] args) {

@@ -7,7 +7,7 @@ import java.util.concurrent.Callable;
 
 public class LoggerCallable implements Callable<Object> {
 
-	private static Logger logger = LoggerFactory.getLogger(LoggerCallable.class);
+	private static final Logger logger = LoggerFactory.getLogger(LoggerCallable.class);
 
 	private int loop = 1;
 	
