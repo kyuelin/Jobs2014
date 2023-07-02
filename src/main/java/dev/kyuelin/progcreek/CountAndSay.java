@@ -12,7 +12,7 @@ public class CountAndSay {
             StringBuilder sb = new StringBuilder();
             for(int i=1; i<result.length(); i++) {
                 if (result.charAt(i) != result.charAt(i-1)) {
-                    sb.append(String.valueOf(count));
+                    sb.append(count);
                     sb.append(result.charAt(i-1));
                     count=1;
                 }
@@ -20,7 +20,7 @@ public class CountAndSay {
                     count++;
                 }
             }
-            sb.append(String.valueOf(count));
+            sb.append(count);
             sb.append(result.charAt(result.length()-1));
             result = sb.toString();
             System.out.format("%3d:%s\n", loop, result);

@@ -13,7 +13,7 @@ public class TransFileReader {
     private static final Logger LOGGER = org.slf4j.LoggerFactory.getLogger(TransFileReader.class);
 
     private BeanReader reader = null;
-    private String transBIOConfig = "transactions.xml";
+    private final String transBIOConfig = "transactions.xml";
 
     public static void main(String[] args) {
         TransFileReader reader = new TransFileReader();

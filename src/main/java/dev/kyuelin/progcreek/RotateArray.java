@@ -17,7 +17,7 @@ public class RotateArray {
     }
 
     public static int[] naturalRotate(int[] arr, int order) {
-        int res[] = new int[arr.length];
+        int[] res = new int[arr.length];
         for(int i = 0; i < order; i++) {
             res[i] = arr[arr.length-order+i];
         }

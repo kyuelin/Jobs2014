@@ -29,7 +29,7 @@ public class MultiThreadTest<T> implements TestInterface {
 		ExecutorService executor = Executors.newFixedThreadPool(nThread);
 		try {
 			List<Future<Object>> results = executor
-					.invokeAll((Collection<? extends Callable<Object>>) tasks);
+					.invokeAll(tasks);
 			for (Future<Object> result : results) {
 				result.get();
 			}

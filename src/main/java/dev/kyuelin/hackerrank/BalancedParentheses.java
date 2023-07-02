@@ -49,11 +49,6 @@ public class BalancedParentheses {
                 return false;
             }
         }
-        if (s.empty()) {
-            return true;
-        }
-        else {
-            return false;
-        }
+        return s.empty();
     }
 }

@@ -3,7 +3,7 @@ package dev.kyuelin.patterns;
 public class BuilderObject {
 	
 	private final int id;
-	private String name;
+	private final String name;
 	
 	private BuilderObject(BuilderObjectBuilder b) {
 		id=b.id;

@@ -15,7 +15,7 @@ public class NewYearChaos {
         List<String> results = new ArrayList<>();
         for (int a0 = 0; a0 < T; a0++) {
             int n = in.nextInt();
-            int q[] = new int[n];
+            int[] q = new int[n];
             for (int q_i = 0; q_i < n; q_i++) {
                 q[q_i] = in.nextInt();
             }

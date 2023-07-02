@@ -20,7 +20,7 @@ public class TwoDArrayDS {
             System.out.println(Arrays.toString(arr[i]));
         }
         */
-        int arr[][] = {
+        int[][] arr = {
                 {-1, 1, -1, 0, 0, 0},
                 {0, -1, 0, 0, 0, 0},
                 {-1, -1, -1, 0, 0, 0},

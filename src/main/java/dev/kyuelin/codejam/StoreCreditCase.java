@@ -7,9 +7,9 @@ import java.util.StringTokenizer;
 
 public class StoreCreditCase {
 
-    private int items;
-    private int credit;
-    private int[] itemsPrices;
+    private final int items;
+    private final int credit;
+    private final int[] itemsPrices;
     private int[] itemsFound;
 
     StoreCreditCase(int items_, int credit_, int[] prices_) {

@@ -3,8 +3,8 @@ package dev.kyuelin.twos.subtree;
 import java.util.Comparator;
 
 class Node implements Comparable<Node>{
-	private int parent;
-	private int value;
+	private final int parent;
+	private final int value;
 	private boolean valid=true;
 	private boolean visited=false;
 	
@@ -40,7 +40,7 @@ class Node implements Comparable<Node>{
 	}
 	
 	public String toString() {
-		return new String(this.parent + ":" + this.value + ":" + this.valid);
+		return this.parent + ":" + this.value + ":" + this.valid;
 	}
 
 	@Override

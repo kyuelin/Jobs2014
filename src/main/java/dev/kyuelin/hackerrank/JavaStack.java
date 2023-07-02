@@ -23,8 +23,7 @@ public class JavaStack {
             }
             i++;
         }
-        if (s.empty()) return true;
-        else return false;
+        return s.empty();
     }
 
     public static void main(String []argh)

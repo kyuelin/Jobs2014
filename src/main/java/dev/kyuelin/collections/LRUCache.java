@@ -11,9 +11,9 @@ import java.util.TreeMap;
  */
 public class LRUCache <K,V> {
 
-    private Map<K,V> cache = new HashMap<>();
+    private final Map<K,V> cache = new HashMap<>();
 
-    private TreeMap<K,Instant> lrumap = new TreeMap<K, Instant>(new Comparator<K>() {
+    private final TreeMap<K,Instant> lrumap = new TreeMap<K, Instant>(new Comparator<K>() {
         @Override
         //todo
         public int compare(K o1, K o2) {
@@ -21,7 +21,7 @@ public class LRUCache <K,V> {
         }
     });
 
-    private int CAPACITY = 1000;
+    private final int CAPACITY = 1000;
 
     public V get(K key) {
         V value = null;

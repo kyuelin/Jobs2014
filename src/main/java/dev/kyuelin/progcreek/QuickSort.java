@@ -19,7 +19,7 @@ public class QuickSort {
         if (l >= r) return;
 
         while (l<=r) {
-            while(in[l] < pivot) {l++;};
+            while(in[l] < pivot) {l++;}
             while(in[r] > pivot) {r--;}
 
             if (l<=r) {

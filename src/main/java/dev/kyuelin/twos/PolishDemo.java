@@ -5,7 +5,7 @@ import java.util.*;
 public class PolishDemo {
 	
 	private static class OperatorFactory {
-		private static Map<String, Operator> opMap = new HashMap<String, Operator>();
+		private static final Map<String, Operator> opMap = new HashMap<String, Operator>();
 
 		
 		static Operator findOp(String c) {

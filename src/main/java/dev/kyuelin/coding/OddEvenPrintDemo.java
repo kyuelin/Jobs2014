@@ -7,7 +7,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class OddEvenPrintDemo {
 
-	private static Logger logger = LoggerFactory
+	private static final Logger logger = LoggerFactory
 			.getLogger(OddEvenPrintDemo.class);
 
 	/**
@@ -19,7 +19,7 @@ public class OddEvenPrintDemo {
 		class CountThread implements Runnable {
 
 			private final int remain;
-			private AtomicInteger count;
+			private final AtomicInteger count;
 
 			CountThread(AtomicInteger c, int rem) {
 				count = c;

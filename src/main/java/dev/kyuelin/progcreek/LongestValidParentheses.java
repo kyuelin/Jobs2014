@@ -21,7 +21,7 @@ public class LongestValidParentheses {
         for(int i=0; i<input.length(); i++) {
             char c = input.charAt(i);
 
-            if(cmap.keySet().contains(c)) {
+            if(cmap.containsKey(c)) {
                 if(tmpStack.isEmpty()) {
                     tmplength++;
                     tmpStack.add(c);
@@ -30,7 +30,7 @@ public class LongestValidParentheses {
                     tmplength=1;
                 }
             }
-            else if (cmap.values().contains(c)) {
+            else if (cmap.containsValue(c)) {
                 if (!tmpStack.isEmpty()) {
                     char c1 = tmpStack.peek();
                     if (c == cmap.get(c1)) {

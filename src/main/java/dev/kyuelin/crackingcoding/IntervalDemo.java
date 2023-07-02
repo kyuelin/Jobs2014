@@ -9,8 +9,8 @@ import java.util.List;
 public class IntervalDemo {
 
     public static class Interval {
-        private int low;
-        private int high;
+        private final int low;
+        private final int high;
 
         public int getHigh() {
             return this.high;
@@ -31,7 +31,7 @@ public class IntervalDemo {
     }
 
     public static class IntervalList {
-        private List<Interval> list = new ArrayList<>();
+        private final List<Interval> list = new ArrayList<>();
 
         public List<Interval> getList() {
             return this.list;
@@ -124,8 +124,8 @@ public class IntervalDemo {
         list2.add(new Interval(6, 10));
 
         IntervalList listOut = list1.intercept(list2);
-        System.out.println(list1.toString());
-        System.out.println(list2.toString());
+        System.out.println(list1);
+        System.out.println(list2);
         System.out.println(listOut.toString());
     }
 

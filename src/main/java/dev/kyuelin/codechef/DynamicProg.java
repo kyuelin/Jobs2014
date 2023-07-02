@@ -5,7 +5,7 @@ package dev.kyuelin.codechef;
  */
 public class DynamicProg {
     public static void getMinStepsToOneByMemorization(int n) {
-        int memo[] = new int[n+1];
+        int[] memo = new int[n+1];
         for(int i=0; i<n+1; i++) {
             memo[i]=-1;
         }
@@ -23,7 +23,8 @@ public class DynamicProg {
     }
 
     public static void getMinStepsToOneByBottomUpDP(int n) {
-        int dp[], i;
+        int[] dp;
+        int i;
         dp = new int[n+1];
 
         dp[1]=0;

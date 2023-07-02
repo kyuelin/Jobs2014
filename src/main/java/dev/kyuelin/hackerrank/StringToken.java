@@ -9,6 +9,7 @@ import java.util.StringTokenizer;
 public class StringToken {
     public static void main(String[] args)
     {
+        //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
         Scanner scan = new Scanner(System.in);
         String s=scan.nextLine();
         StringTokenizer st = new StringTokenizer(s," !,?._'@",false);

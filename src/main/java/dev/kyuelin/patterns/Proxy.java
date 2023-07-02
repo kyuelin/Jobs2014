@@ -2,7 +2,7 @@ package dev.kyuelin.patterns;
 
 public class Proxy {	
 	interface IAction {
-		public void doAction();
+		void doAction();
 	}
 	
 	class RealAction implements IAction {

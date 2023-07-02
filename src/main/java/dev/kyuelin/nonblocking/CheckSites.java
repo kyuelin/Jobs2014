@@ -101,7 +101,7 @@ public final class CheckSites {
 			"http://www.date4j.net", "http://www.web4j.com");
 
 	private static void log(Object aMsg) {
-		System.out.println(String.valueOf(aMsg));
+		System.out.println(aMsg);
 	}
 
 	/** Try to ping a URL. Return true only if successful. */

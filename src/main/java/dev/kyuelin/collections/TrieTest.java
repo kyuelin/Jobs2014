@@ -9,7 +9,7 @@ import java.util.Scanner;
  */
 class Trie {
 
-    private TrieNode root;
+    private final TrieNode root;
 
     public void insert(String word) {
         if (search(word) == true) {

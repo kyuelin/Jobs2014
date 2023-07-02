@@ -3,7 +3,7 @@ package dev.kyuelin.principles;
 // Dependency Inversion Principle - Good example
 public class DPrinciple {
 	interface IWorker {
-		public void work();
+		void work();
 	}
 	class Worker implements IWorker {
 		public void work() {}

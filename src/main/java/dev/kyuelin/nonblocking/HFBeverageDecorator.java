@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
 public class HFBeverageDecorator {
 
 	
-	private static Logger logger = LoggerFactory.getLogger(HFBeverageDecorator.class);
+	private static final Logger logger = LoggerFactory.getLogger(HFBeverageDecorator.class);
 	
 	/**
 	 * @param args
@@ -31,7 +31,7 @@ public class HFBeverageDecorator {
 
 	public abstract class Beverage {
 
-		private String description = "Uknown Beverage";
+		private final String description = "Uknown Beverage";
 
 		public String getDescription() {
 			return description;

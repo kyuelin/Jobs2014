@@ -69,7 +69,7 @@ public class OnSiteInt {
 	}
 	
 	interface Operator {
-		public int operate(int i1, int i2);
+		int operate(int i1, int i2);
 	}
 	
 	class AddOperator implements Operator {

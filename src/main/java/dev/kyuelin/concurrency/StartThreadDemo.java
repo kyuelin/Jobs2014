@@ -11,7 +11,7 @@ public class StartThreadDemo {
 	}
 	
 	private static class Task implements Runnable {
-		private String caller;
+		private final String caller;
 		
 		public Task(String name) {
 			this.caller=name;

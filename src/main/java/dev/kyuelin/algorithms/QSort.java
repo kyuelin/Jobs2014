@@ -26,9 +26,9 @@ public class QSort {
 	public static class QuickPosInfo {
 		public int left;
 		public int right;
-	};
+	}
 
-	public static QuickPosInfo info = new QuickPosInfo();
+    public static QuickPosInfo info = new QuickPosInfo();
 
 	public static void QuickSort_Iterative(int[] numbers, int left, int right) {
 

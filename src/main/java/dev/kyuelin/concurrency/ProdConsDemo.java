@@ -76,7 +76,7 @@ public class ProdConsDemo {
 				while (true) {
 					Double d = queue.poll();
 					if (d != null) {
-						logger.debug(this.getClass().getName()+"("+queue.size()+")..." + d.toString());
+						logger.debug(this.getClass().getName()+"("+queue.size()+")..." + d);
 					}
 					Thread.sleep(SLEEP_C);
 				}
@@ -105,7 +105,7 @@ public class ProdConsDemo {
 				try {
 					Double d = new Double(Math.random()); 
 					queue.add(d);
-					logger.debug(this.getClass().getName()+"("+queue.size()+")..." + d.toString());
+					logger.debug(this.getClass().getName()+"("+queue.size()+")..." + d);
 					Thread.sleep(SLEEP_P);
 				} catch (InterruptedException e1) {
 					// TODO Auto-generated catch block
@@ -132,7 +132,7 @@ public class ProdConsDemo {
 			try {
 				while (true) {
 					Double d = queue.take();
-					logger.debug(this.getClass().getName()+"("+queue.size()+")..." + d.toString());
+					logger.debug(this.getClass().getName()+"("+queue.size()+")..." + d);
 					Thread.sleep(SLEEP_C);
 				}
 			} catch (InterruptedException e) {
@@ -161,7 +161,7 @@ public class ProdConsDemo {
 					Double d = new Double(Math.random()); 
 					queue.add(d);
 					queue.put(d);
-					logger.debug(this.getClass().getName()+"("+queue.size()+")..." + d.toString());
+					logger.debug(this.getClass().getName()+"("+queue.size()+")..." + d);
 					Thread.sleep(SLEEP_P);
 				} catch (InterruptedException e1) {
 					// TODO Auto-generated catch block
@@ -197,7 +197,7 @@ public class ProdConsDemo {
 					}
 					Double d = new Double(Math.random()); 
 					queue.add(d);
-					logger.debug(this.getClass().getName()+"("+queue.size()+")..." + d.toString());
+					logger.debug(this.getClass().getName()+"("+queue.size()+")..." + d);
 					queue.notify();
 				}
 				try {
@@ -256,7 +256,7 @@ public class ProdConsDemo {
 		public void run() {
 			while(true) {				
 				Double d = new Double(Math.random());
-				logger.debug(this.getClass().getName()+"..." + d.toString());
+				logger.debug(this.getClass().getName()+"..." + d);
 				this.setChanged();
 				this.notifyObservers(d);
 				try {

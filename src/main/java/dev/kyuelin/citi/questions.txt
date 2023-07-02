@@ -1,0 +1,22 @@
+Tech Interview Questions:
+
+Prepare an IDE in advance. All of the questions came up with a coding requirement.
+
+	1.	Hashmap:
+	- Remove an item from the map
+	- How to implement customized Hashmap key? Related questions like key collision handling, time complexity, etc. could be asked.
+	2.	Design Patterns:
+	- What design patterns have you used?
+	- Implement a Singleton. Different ways of creating a Singleton class.
+	3.	Multi-threading, Concurrency
+	- Be able to explain the concepts
+	4.	Producer and consumer
+	- Implement a blocking queue
+	5.	Algorithms
+	- Different types of BST traverse
+	6.	SQL
+	- Write queries based on description
+	- Normalization Denormalization concept
+	- Different types of locks
+	- How to maintain unique ID in database
+
